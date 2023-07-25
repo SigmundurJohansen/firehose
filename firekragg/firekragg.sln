@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32505.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "firekragg", "firekragg.vcxproj", "{3B3002F6-11D0-434A-AE25-0E8F5070DCBC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "firehose", "..\firehose\firehose.vcxproj", "{749A246E-89C8-4042-80B3-7C20B0C8D0AC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fireclient", "..\fireclient\fireclient.vcxproj", "{8AE950B7-E882-47BA-86EA-7DBA1E4ADF87}"
+	ProjectSection(ProjectDependencies) = postProject
+		{749A246E-89C8-4042-80B3-7C20B0C8D0AC} = {749A246E-89C8-4042-80B3-7C20B0C8D0AC}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fireserver", "..\fireserver\fireserver.vcxproj", "{96BB6183-DDF6-4810-86CC-EB9F2322E010}"
+	ProjectSection(ProjectDependencies) = postProject
+		{749A246E-89C8-4042-80B3-7C20B0C8D0AC} = {749A246E-89C8-4042-80B3-7C20B0C8D0AC}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B3002F6-11D0-434A-AE25-0E8F5070DCBC}.Debug|x64.ActiveCfg = Debug|x64
+		{3B3002F6-11D0-434A-AE25-0E8F5070DCBC}.Debug|x64.Build.0 = Debug|x64
+		{3B3002F6-11D0-434A-AE25-0E8F5070DCBC}.Debug|x86.ActiveCfg = Debug|Win32
+		{3B3002F6-11D0-434A-AE25-0E8F5070DCBC}.Debug|x86.Build.0 = Debug|Win32
+		{3B3002F6-11D0-434A-AE25-0E8F5070DCBC}.Release|x64.ActiveCfg = Release|x64
+		{3B3002F6-11D0-434A-AE25-0E8F5070DCBC}.Release|x64.Build.0 = Release|x64
+		{3B3002F6-11D0-434A-AE25-0E8F5070DCBC}.Release|x86.ActiveCfg = Release|Win32
+		{3B3002F6-11D0-434A-AE25-0E8F5070DCBC}.Release|x86.Build.0 = Release|Win32
+		{749A246E-89C8-4042-80B3-7C20B0C8D0AC}.Debug|x64.ActiveCfg = Debug|x64
+		{749A246E-89C8-4042-80B3-7C20B0C8D0AC}.Debug|x64.Build.0 = Debug|x64
+		{749A246E-89C8-4042-80B3-7C20B0C8D0AC}.Debug|x86.ActiveCfg = Debug|Win32
+		{749A246E-89C8-4042-80B3-7C20B0C8D0AC}.Debug|x86.Build.0 = Debug|Win32
+		{749A246E-89C8-4042-80B3-7C20B0C8D0AC}.Release|x64.ActiveCfg = Release|x64
+		{749A246E-89C8-4042-80B3-7C20B0C8D0AC}.Release|x64.Build.0 = Release|x64
+		{749A246E-89C8-4042-80B3-7C20B0C8D0AC}.Release|x86.ActiveCfg = Release|Win32
+		{749A246E-89C8-4042-80B3-7C20B0C8D0AC}.Release|x86.Build.0 = Release|Win32
+		{8AE950B7-E882-47BA-86EA-7DBA1E4ADF87}.Debug|x64.ActiveCfg = Debug|x64
+		{8AE950B7-E882-47BA-86EA-7DBA1E4ADF87}.Debug|x64.Build.0 = Debug|x64
+		{8AE950B7-E882-47BA-86EA-7DBA1E4ADF87}.Debug|x86.ActiveCfg = Debug|Win32
+		{8AE950B7-E882-47BA-86EA-7DBA1E4ADF87}.Debug|x86.Build.0 = Debug|Win32
+		{8AE950B7-E882-47BA-86EA-7DBA1E4ADF87}.Release|x64.ActiveCfg = Release|x64
+		{8AE950B7-E882-47BA-86EA-7DBA1E4ADF87}.Release|x64.Build.0 = Release|x64
+		{8AE950B7-E882-47BA-86EA-7DBA1E4ADF87}.Release|x86.ActiveCfg = Release|Win32
+		{8AE950B7-E882-47BA-86EA-7DBA1E4ADF87}.Release|x86.Build.0 = Release|Win32
+		{96BB6183-DDF6-4810-86CC-EB9F2322E010}.Debug|x64.ActiveCfg = Debug|x64
+		{96BB6183-DDF6-4810-86CC-EB9F2322E010}.Debug|x64.Build.0 = Debug|x64
+		{96BB6183-DDF6-4810-86CC-EB9F2322E010}.Debug|x86.ActiveCfg = Debug|Win32
+		{96BB6183-DDF6-4810-86CC-EB9F2322E010}.Debug|x86.Build.0 = Debug|Win32
+		{96BB6183-DDF6-4810-86CC-EB9F2322E010}.Release|x64.ActiveCfg = Release|x64
+		{96BB6183-DDF6-4810-86CC-EB9F2322E010}.Release|x64.Build.0 = Release|x64
+		{96BB6183-DDF6-4810-86CC-EB9F2322E010}.Release|x86.ActiveCfg = Release|Win32
+		{96BB6183-DDF6-4810-86CC-EB9F2322E010}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {151F8C9F-441F-4E06-877D-9402CAF37F97}
+	EndGlobalSection
+EndGlobal
